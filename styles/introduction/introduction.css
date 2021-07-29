@@ -1,0 +1,23 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction__heading {
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    font-size: var(--fs-h2);
+    line-height: 57px;
+}
+
+.introduction__paragraph {
+    max-width: 470px;
+
+    font-weight: var(--fw5);
+    font-size: var(--fs-paragraph);
+    line-height: 20px;
+    text-align: center;
+}

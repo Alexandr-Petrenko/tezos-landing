@@ -1,5 +1,12 @@
 @import "reset.css";
 @import "container.css";
+@import "button/button.css";
 @import "header/header.css";
 @import "nav/nav.css";
+@import "section-wrapper/section-wrapper.css";
 @import "benefits/benefist.css";
+@import "comments/comments.css";
+@import "introduction/introduction.css";
+@import "projets/projects.css";
+@import "tarifs/tarifs.css";
+@import "appointment/appointment.css";

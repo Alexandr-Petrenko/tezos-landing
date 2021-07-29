@@ -24,6 +24,10 @@
 
 .benefits__heading {
     margin-bottom: 15px;
+
+    font-size: var(--fs-h5);
+    font-weight: var(--fw5);
+    line-height: 24px;
 }
 
 .benefits__description {

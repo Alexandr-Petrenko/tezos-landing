@@ -1,0 +1,54 @@
+.projects {
+    padding: 112px 0;
+    background: var(--c-dark-bg);
+}
+
+.projects__container {
+    max-width: 1410px;
+    padding: 0 15px;
+}
+
+.projects__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 30px 21px;
+}
+
+.projects__item {
+    position: relative;
+    max-width: 331px;
+    padding: 278px 74px 18px 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../../img/background-project-1.jpg") no-repeat center;
+    background-size: cover;
+    justify-self: center;
+}
+
+.projects__item--second {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../../img/background-project-2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.projects__item--third {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../../img/background-project-3.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.projects__item--fourth {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../../img/background-project-4.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.projects__heading {
+    margin-bottom: 15px;
+    font-weight: var(--fw6);
+    font-size: var(--fs-h6);
+    line-height: 24px;
+}
+
+.projects__subheading {
+    margin-bottom: 15px;
+    font-weight: var(--fw5);
+    font-size: var(--fs-h3);
+    line-height: 30px;
+}
