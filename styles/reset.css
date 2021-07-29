@@ -11,11 +11,12 @@ html {
 
 body {
     margin: 0;
-    width: 100vw;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: var(--fs-main);
     color: var(--c-main-text);
     overflow-x: hidden;
+    /*громный вопрос в header 88 строка если закоментить єтот overflow*/
 }
 
 ul {

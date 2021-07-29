@@ -42,8 +42,6 @@
 .tariffs__button {
     display: block;
     margin-bottom: 35px;
-
-    color: var(--c-main-text);
 }
 
 .tariffs__service {

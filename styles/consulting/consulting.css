@@ -1,0 +1,51 @@
+.consulting {
+    background: var(--c-main-bg);
+    padding: 40px 0;
+}
+
+.consulting__container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 5px;
+}
+
+.consulting__introduction {
+    display: block;
+    max-width: 475px;
+}
+
+.consulting__heading {
+    font-weight: bold;
+    font-size: var(--fs-h3);
+    line-height: 32px;
+    color: var(--c-dark-bg);
+}
+
+.consulting__paragraph {
+    text-align: left;
+}
+
+.consulting__button {
+    display: block;
+    margin-bottom: 35px;
+    max-width: 160px;
+}
+
+@media (max-width: 900px) {
+    .consulting__container {
+        max-width: 50%;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0 5px;
+    }
+
+    .consulting__paragraph {
+        margin-bottom: 50px;
+    }
+
+    .consulting__button {
+        align-self: start;
+    }
+}

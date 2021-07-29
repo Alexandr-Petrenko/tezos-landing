@@ -3,6 +3,7 @@
     position: relative;
     padding-top: 20px;
     padding-bottom: 112px;
+    width: 100%;
 }
 
 .header__hero {
@@ -20,22 +21,14 @@
 }
 
 .header__wrapper--mobile {
-    max-width: 900px;
-    margin-bottom: 96px;
     display: none;
-    flex-direction: column;
-
-    font-weight: normal;
-    font-size: var(--fs-mobile-nav);
-    line-height: 45px;
-    background-color: var(--c-dark-bg);
 }
 
 .header__services {
     display: flex;
     justify-content: space-between;
-    max-width: 128px;
     width: 100%;
+    max-width: 128px;
 }
 
 .header__logo {
@@ -95,8 +88,6 @@
 .header__icons {
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    max-width: 900px;
     margin-bottom: 100px;
 }
 
@@ -138,11 +129,17 @@
 
     .header__wrapper {
         display: none;
-        margin-bottom: 84px;
     }
 
     .header__wrapper--mobile {
         display: flex;
+        margin-bottom: 96px;
+        flex-direction: column;
+
+        font-weight: normal;
+        font-size: var(--fs-mobile-nav);
+        line-height: 45px;
+        background-color: var(--c-dark-bg);
     }
 
     .header__main {

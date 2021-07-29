@@ -1,10 +1,15 @@
 .button {
     display: inline-block;
+    color: var(--c-main-text);
     text-align: center;
     padding: 15px 52px 15px 25px;
     background-color: var(--c-button);
     border-radius: 5px;
     font-weight: var(--fw8);
+}
+
+.button--default {
+    padding: 15px 25px;
 }
 
 .button--oval {
