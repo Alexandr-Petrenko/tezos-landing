@@ -34,5 +34,6 @@
     .copy {
         padding-left: 89px;
         padding-right: 89px;
+        background: var(--c-dark-bg);
     }
 }
