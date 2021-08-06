@@ -1,5 +1,5 @@
 .header {
-    background: url("../../img/background.jpg");
+    background: url("../../img/background.jpg") no-repeat center;
     position: relative;
     padding-top: 20px;
 }
