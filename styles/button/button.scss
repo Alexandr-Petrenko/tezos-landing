@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  color: $c-main-text;
+  text-align: center;
+  padding: 15px 52px 15px 25px;
+  background-color: $c-button;
+  border-radius: 5px;
+  font-weight: $fw8;
+
+  &--default {
+    padding: 15px 25px;
+  }
+
+  &--oval {
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 37px;
+    transition: background-color .5s;
+
+    @media (max-width: 900px) {
+      display: block;
+      margin-right: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: $c-button;
+      border: 1px solid $c-button;
+      transition: background-color .5s;
+    }
+  }
+}

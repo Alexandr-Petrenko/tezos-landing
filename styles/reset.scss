@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: $fs-main;
+  };
+
+  color: $c-main-text;
+  overflow-x: hidden;
+  /*громный вопрос в header 88 строка если закоментить єтот overflow*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}

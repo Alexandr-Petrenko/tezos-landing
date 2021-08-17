@@ -1,0 +1,171 @@
+@use "sass:math";
+
+.header {
+  min-height: 100vh;
+
+  background: url("/img/background.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding-top: 20px;
+
+  @media (max-width: 900px) {
+      height: auto;
+      padding-top: 0;
+      padding-bottom: 7px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -1051px 396px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 145px;
+
+    font-weight: $fw6;
+    font-size: $fs-header-link;
+    line-height: 24px;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media (max-width: 900px) {
+        display: flex;
+        margin-bottom: 96px;
+        flex-direction: column;
+        align-items: center;
+
+        font: {
+          size: $fs-mobile-nav;
+          weight: normal;
+        };
+
+        line-height: 45px;
+        background-color: $c-dark-bg;
+      }
+    }
+  }
+
+  &__services {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 128px;
+  }
+
+  &__logo {
+    padding-top: 16px;
+
+    font-weight: bold;
+    font-size: $fs-h3;
+    line-height: 32px;
+  }
+
+  &__nav {
+    width: 290px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 308px;
+  }
+
+  &__link {
+    padding-top: 16px;
+  }
+
+  &__link--arrow{
+    position: relative;
+
+    &::after {
+      $height: 10px;
+      $right-button-margin: 52px;
+
+      position: absolute;
+      top: calc(50% - (#{$height} / 2));
+      right: calc(#{$right-button-margin} / 2);
+      display: block;
+      width: 12px;
+      height: $height;
+      content: '';
+      background: url('/img/Vector(1).svg');
+    }
+  }
+
+  &__slogan {
+    max-width: 599px;
+    margin-bottom: 35px;
+
+    font-size: $fs-h1;
+    font-weight: $fw8;
+    line-height: 80px;
+
+    @media (max-width: 900px) {
+      max-width: 310px;
+
+      font: {
+        size: $fs-h2;
+        weight: $fw5;
+      };
+
+      line-height: 57px;
+      text-align: center;
+    }
+  }
+
+  &__sub-slogan {
+    max-width: 376px;
+    margin-bottom: 35px;
+
+    font-size: $fs-h4;
+    font-weight: $fw5;
+
+    @media (max-width: 900px) {
+      max-width: 275px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+
+  &__icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  &__services {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__service {
+    $square-size: 24px;
+
+    width: $square-size;
+    height: $square-size;
+    fill: $c-svg;
+  }
+
+  &__service-link {
+    display: flex;
+    align-items: flex-end;
+
+    &:hover {
+      fill: $c-svg-hover;
+    }
+  }
+
+  &__main {
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

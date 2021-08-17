@@ -1,0 +1,128 @@
+.appointment {
+
+  %placeholder-text {
+    font: {
+      size: $fs-paragraph;
+      weight: normal;
+    };
+
+    color: $c-sub-heading;
+    line-height: 28px;
+  }
+
+  padding: 90px 5px 90px 5px;
+  background: linear-gradient(89.83deg, #FFFFFF 14.24%, #FFFFFF 14.25%, rgba(255, 255, 255, 0) 99.55%), url("/img/form-background.jpg") no-repeat center;
+  background-size: cover;
+
+  &__introduction {
+    margin-bottom: 40px;
+
+    color: $c-dark-bg;
+    flex-direction: column-reverse;
+    align-items: start;
+
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__form {
+    max-width: 601px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 900px) {
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 569px) {
+      justify-content: center;
+    }
+  }
+
+  &__input {
+    width: 280px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0 21px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    outline: none;
+
+    &::placeholder {
+      @extend %placeholder-text;
+    }
+
+    &--select {
+      -webkit-appearance: none;
+      margin-right: 0;
+    }
+
+    @media (max-width: 569px) {
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &--select {
+      position: relative;
+
+      &::placeholder {
+        @extend %placeholder-text;
+      }
+
+      &::before {
+        $border-color: #737373;
+        $border-size: 2px;
+        $border-style: solid;
+
+        %border {
+          border-left: $border-size $border-style $border-color;
+          border-bottom: $border-size $border-style $border-color;
+        }
+
+        position: absolute;
+        top: 17px;
+        right: 8px;
+        z-index: 1;
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+
+        @extend %border;
+
+        transform: rotate(-45deg);
+      }
+    }
+
+    &--textarea {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 569px) {
+      width: 100%;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+
+    padding: 16px 0 0 26px;
+    border: 1px solid #e6e6e6;;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+
+    &::placeholder {
+      @extend %placeholder-text;
+    }
+  }
+}

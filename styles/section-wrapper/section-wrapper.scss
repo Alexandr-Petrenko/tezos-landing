@@ -1,0 +1,18 @@
+.section-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  padding: 0 5px;
+
+  &--comments {
+    gap: 30px 137px;
+  }
+
+  &--projects {
+    gap: 30px 21px;
+  }
+
+  &--tariffs {
+    gap: 83px 30px;
+  }
+}
