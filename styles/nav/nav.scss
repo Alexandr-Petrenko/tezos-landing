@@ -1,0 +1,38 @@
+.nav {
+  padding-top: 16px;
+
+  &--mobile {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &--mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    transition: color .5s;
+
+    &:hover {
+      color: $c-svg-hover;
+      transition: color .5s;
+    }
+
+    &--mobile:hover {
+      color: $c-svg-hover;
+    }
+  }
+
+  &__item {
+    &--mobile {
+      margin-bottom: 30px;
+    }
+  }
+}

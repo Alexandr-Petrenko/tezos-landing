@@ -17,7 +17,7 @@
     <title>Tezos Landing</title>
 </head>
 <body>
-    <header class="header header__hero">
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <h3 class="header__logo">
@@ -136,7 +136,7 @@
                         </a>
                     </div>
                 </div>
-                <nav class="nav header__nav nav__mobile">
+                <nav class="nav header__nav nav--mobile">
                     <ul class="nav__list nav__list--mobile">
                         <li class="nav__item nav__item--mobile">
                             <a href="#" class="nav__link nav__link--mobile">
@@ -491,21 +491,21 @@
                     </p>
                 </div>
                 <form action="" class="appointment__form">
-                    <label class="input__wrapper">
+                    <label class="appointment__wrapper">
                         <input
                                 type="text"
                                 class="appointment__input"
                                 placeholder="Full Name *"
                         >
                     </label>
-                    <label class="input__wrapper">
+                    <label class="appointment__wrapper">
                         <input
                                 type="email"
                                 class="appointment__input"
                                 placeholder="Email *"
                         >
                     </label>
-                        <label for="appointment__select" class="input__wrapper select__wrapper">
+                        <label for="appointment__select" class="appointment__wrapper appointment__wrapper--select">
                             <select
                                     name="select"
                                     id="appointment__select"
@@ -514,13 +514,14 @@
                                 <option
                                         value="option"
                                         class="appointment__option"
+
                                 >
                                     Please Select
                                 </option>
                             </select>
                         </label>
 
-                        <label for="appointment__time" class="input__wrapper select__wrapper">
+                        <label for="appointment__time" class="appointment__wrapper appointment__wrapper--select">
                             <select
                                     name="time"
                                     id="appointment__time"
@@ -534,7 +535,7 @@
                                 </option>
                             </select>
                         </label>
-                    <label for="appointment__textarea" class="input__wrapper textarea__wrapper">
+                    <label for="appointment__textarea" class="appointment__wrapper appointment__wrapper--textarea">
                         <textarea
                                 name="textarea"
                                 id="appointment__textarea"
@@ -544,6 +545,9 @@
                                 placeholder="Message"
                         ></textarea>
                     </label>
+                    <a href="#" class="button button--default">
+                        Book Appointment
+                    </a>
                 </form>
             </div>
         </section>
