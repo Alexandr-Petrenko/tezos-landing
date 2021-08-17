@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 12px;
   height: 10px;
   content: "";
-  background: url("/img/Vector(1).svg");
+  background: url("../img/Vector(1).svg");
 }
 .header__slogan {
   max-width: 599px;
@@ -344,10 +344,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 5px;
 }
 .comments__star--full {
-  background: url("/img/fullstar.svg") no-repeat center;
+  background: url("../img/fullstar.svg") no-repeat center;
 }
 .comments__star--empty {
-  background: url("/img/emptystar.svg") no-repeat center;
+  background: url("../img/emptystar.svg") no-repeat center;
 }
 .comments__description {
   max-width: 370px;
@@ -411,20 +411,20 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   max-width: 331px;
   padding: 278px 74px 18px 20px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("/img/background-project-1.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-1.jpg") no-repeat center;
   background-size: cover;
   justify-self: center;
 }
 .projects__item--second {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("/img/background-project-2.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-2.jpg") no-repeat center;
   background-size: cover;
 }
 .projects__item--third {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("/img/background-project-3.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-3.jpg") no-repeat center;
   background-size: cover;
 }
 .projects__item--fourth {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("/img/background-project-4.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-4.jpg") no-repeat center;
   background-size: cover;
 }
 .projects__heading {
@@ -513,7 +513,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
   width: 32px;
   height: 32px;
-  background: url("/img/available.png");
+  background: url("../img/available.png");
 }
 .tariffs__service--unavailable:before {
   position: absolute;
@@ -523,12 +523,12 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
   width: 32px;
   height: 32px;
-  background: url("/img/unavailable.png");
+  background: url("../img/unavailable.png");
 }
 
 .appointment {
   padding: 90px 5px 90px 5px;
-  background: linear-gradient(89.83deg, #FFFFFF 14.24%, #FFFFFF 14.25%, rgba(255, 255, 255, 0) 99.55%), url("/img/form-background.jpg") no-repeat center;
+  background: linear-gradient(89.83deg, #FFFFFF 14.24%, #FFFFFF 14.25%, rgba(255, 255, 255, 0) 99.55%), url("../img/form-background.jpg") no-repeat center;
   background-size: cover;
 }
 .appointment .appointment__textarea::placeholder, .appointment .appointment__wrapper--select::placeholder, .appointment .appointment__input::placeholder {

@@ -93,7 +93,7 @@
       display: block;
       width: $square-size;
       height: $square-size;
-      background: url("/img/available.png");
+      background: url("../img/available.png");
     }
 
     &--unavailable:before {
@@ -106,7 +106,7 @@
       display: block;
       width: $square-size;
       height: $square-size;
-      background: url("/img/unavailable.png")
+      background: url("../img/unavailable.png")
     }
   }
 }
