@@ -1,25 +1,33 @@
-@use "sass:math";
+%flex-align {
+  display: flex;
+  align-items: flex-end;
+}
 
 .header {
   min-height: 100vh;
 
-  background: url("../img/background.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../img/background.jpg") no-repeat center {
+    size: cover;
+  };
+
   position: relative;
   padding-top: 20px;
 
   @media (max-width: 900px) {
       height: auto;
-      padding-top: 0;
-      padding-bottom: 7px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: -1051px 396px;
+      padding: {
+      top: 0;
+      bottom: 7px;
+      };
+      background: {
+        repeat: no-repeat;
+        size: cover;
+        position: -1051px 396px;
+      };
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify(space-between);
     margin-bottom: 145px;
 
     font-weight: $fw6;
@@ -34,10 +42,8 @@
       display: none;
 
       @media (max-width: 900px) {
-        display: flex;
+        @include flex-direction-align(space-between, column, center);
         margin-bottom: 96px;
-        flex-direction: column;
-        align-items: center;
 
         font: {
           size: $fs-mobile-nav;
@@ -51,8 +57,7 @@
   }
 
   &__services {
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify(space-between);
     width: 100%;
     max-width: 128px;
   }
@@ -70,8 +75,7 @@
   }
 
   &__links {
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify(space-between);
     width: 308px;
   }
 
@@ -134,14 +138,12 @@
 
   &__icons {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    @include flex-justify(space-around);
     margin-bottom: 100px;
   }
 
   &__services {
-    display: flex;
-    align-items: flex-end;
+    @extend %flex-align;
   }
 
   &__service {
@@ -153,8 +155,7 @@
   }
 
   &__service-link {
-    display: flex;
-    align-items: flex-end;
+    @extend %flex-align;
 
     &:hover {
       fill: $c-svg-hover;
@@ -163,9 +164,7 @@
 
   &__main {
     @media (max-width: 900px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-direction-align(normal, column, center);
     }
   }
 }

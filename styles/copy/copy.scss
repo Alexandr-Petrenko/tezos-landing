@@ -10,8 +10,7 @@
   }
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify(space-between);
 
     @media (max-width: 900px) {
       flex-direction: column;
@@ -36,8 +35,7 @@
   }
 
   &__socials {
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify(space-between);
     width: 112px;
   }
 }

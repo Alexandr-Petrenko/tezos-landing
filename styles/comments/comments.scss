@@ -48,8 +48,7 @@
   &__star {
     $square-star-size: 22px;
 
-    width: $square-star-size;
-    height: $square-star-size;
+    @include square($square-star-size);
 
     &:not(:last-child) {
       margin-right: 5px;

@@ -1,8 +1,5 @@
 .introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-direction-align(center, column, center);
 
   &__heading {
     margin-bottom: 10px;

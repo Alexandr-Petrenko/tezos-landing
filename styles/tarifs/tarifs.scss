@@ -19,16 +19,16 @@
       top: -44px;
       right: 16px;
       content: "New";
-      display: flex;
-      justify-content: center;
+      @include flex-justify(center);
+      @include round($square-size);
       align-items: center;
-      width: $square-size;
-      height: $square-size;
-      border-radius: 50%;
+
       background: #e77c40;
       color: #fff;
-      font-weight: bold;
-      font-size: $fs-h3;
+      font: {
+        size: $fs-h3;
+        weight: $fw7;
+      };
       line-height: 32px;
     }
   }
@@ -91,8 +91,8 @@
       top: -5px;
       left: -42px;
       display: block;
-      width: $square-size;
-      height: $square-size;
+      @include square($square-size);
+
       background: url("../img/available.png");
     }
 
@@ -104,8 +104,8 @@
       top: -5px;
       left: -42px;
       display: block;
-      width: $square-size;
-      height: $square-size;
+      @include square($square-size);
+
       background: url("../img/unavailable.png")
     }
   }

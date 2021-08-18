@@ -1,0 +1,25 @@
+@mixin square($size) {
+  width: $size;
+  height: $size;
+};
+
+@mixin round($size) {
+  @include square($size);
+
+  border-radius: 50%;
+}
+
+@mixin flex-justify($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin flex-direction($justify, $direction) {
+  @include flex-justify($justify);
+  flex-direction: $direction;
+}
+
+@mixin flex-direction-align($justify, $direction, $align) {
+  @include flex-direction($justify, $direction);
+  align-items: $align;
+}

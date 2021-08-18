@@ -18,22 +18,33 @@
     position: relative;
     max-width: 331px;
     padding: 278px 74px 18px 20px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-1.jpg") no-repeat center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%,
+                rgba(56, 56, 56, 0.84) 100%),
+                url("../img/background-project-1.jpg") no-repeat center;
     background-size: cover;
     justify-self: center;
 
     &--second {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-2.jpg") no-repeat center;
+      background: linear-gradient(180deg,
+                  rgba(0, 0, 0, 0) 14.58%,
+                  rgba(56, 56, 56, 0.84) 100%),
+                  url("../img/background-project-2.jpg") no-repeat center;
       background-size: cover;
     }
 
     &--third {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-3.jpg") no-repeat center;
+      background: linear-gradient(180deg,
+                  rgba(0, 0, 0, 0) 14.58%,
+                  rgba(56, 56, 56, 0.84) 100%),
+                  url("../img/background-project-3.jpg") no-repeat center;
       background-size: cover;
     }
 
     &--fourth {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%), url("../img/background-project-4.jpg") no-repeat center;
+      background: linear-gradient(180deg,
+                  rgba(0, 0, 0, 0) 14.58%,
+                  rgba(56, 56, 56, 0.84) 100%),
+                  url("../img/background-project-4.jpg") no-repeat center;
       background-size: cover;
     }
   }

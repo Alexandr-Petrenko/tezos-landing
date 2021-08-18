@@ -30,13 +30,11 @@
 
   &__form {
     max-width: 601px;
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify(space-between);
     flex-wrap: wrap;
 
     @media (max-width: 900px) {
       margin: 0 auto;
-      justify-content: space-between;
     }
 
     @media (max-width: 569px) {
