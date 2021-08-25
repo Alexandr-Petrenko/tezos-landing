@@ -1,11 +1,11 @@
-.about {
+.useful-links {
   padding: 50px 0;
   background: $c-dark-bg;
   color: $c-main-text;
 
   &__container {
     padding: 0 5px;
-    @include flex-justify(space-between);
+    @include justify(space-between);
 
     @media (max-width: 900px) {
       padding-left: 87px;
@@ -29,16 +29,12 @@
     line-height: 24px;
   }
 
-  &__link {
+  &--link {
     margin-bottom: 20px;
 
     font: {
       size: $fs-paragraph;
-      weight: $fw6;
+      weight: $fw-6;
     };
-
-    &:hover {
-      color: $c-svg-hover;
-    }
   }
 }

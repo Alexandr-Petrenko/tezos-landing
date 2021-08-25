@@ -5,9 +5,9 @@
   padding: 15px 25px;
   background-color: $c-button;
   border-radius: 5px;
-  font-weight: $fw8;
+  font-weight: $fw-8;
 
-  &--arrow {
+  &--with-icon {
     padding: 15px 52px 15px 25px;
   }
 
@@ -24,13 +24,39 @@
 
     &:not(:last-child) {
       margin-bottom: 25px;
-      margin-right: 10px;
     }
 
     &:hover {
       background-color: $c-button;
       border: 1px solid $c-button;
       transition: background-color .5s;
+    }
+  }
+
+  &--with-color {
+    transition: .5s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: .5s;
+    }
+  }
+
+  &--arrow{
+    position: relative;
+
+    &::after {
+      $height: 10px;
+      $right-button-margin: 52px;
+
+      position: absolute;
+      top: calc(50% - (#{$height} / 2));
+      right: calc(#{$right-button-margin} / 2);
+      display: block;
+      width: 12px;
+      height: $height;
+      content: '';
+      background: url('../img/Vector(1).svg');
     }
   }
 }

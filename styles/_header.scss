@@ -4,6 +4,8 @@
 }
 
 .header {
+  $bottom-margin: 96px;
+
   min-height: 100vh;
 
   background: url("../img/background.jpg") no-repeat center {
@@ -17,7 +19,7 @@
       height: auto;
       padding: {
       top: 0;
-      bottom: 7px;
+      bottom: $bottom-margin;
       };
       background: {
         repeat: no-repeat;
@@ -27,10 +29,10 @@
   }
 
   &__wrapper {
-    @include flex-justify(space-between);
+    @include justify(space-between);
     margin-bottom: 145px;
 
-    font-weight: $fw6;
+    font-weight: $fw-6;
     font-size: $fs-header-link;
     line-height: 24px;
 
@@ -42,8 +44,8 @@
       display: none;
 
       @media (max-width: 900px) {
-        @include flex-direction-align(space-between, column, center);
-        margin-bottom: 96px;
+        @include justify-direction-align(space-between, column, center);
+        margin-bottom: $bottom-margin;
 
         font: {
           size: $fs-mobile-nav;
@@ -57,7 +59,7 @@
   }
 
   &__services {
-    @include flex-justify(space-between);
+    @include justify(space-between);
     width: 100%;
     max-width: 128px;
   }
@@ -68,37 +70,28 @@
     font-weight: bold;
     font-size: $fs-h3;
     line-height: 32px;
+
+    &-link {
+      transition: color .5s;
+
+      &:hover {
+        color: $c-svg-hover;
+        transition: color .5s;
+      }
+    }
   }
 
   &__nav {
     width: 290px;
   }
 
-  &__links {
-    @include flex-justify(space-between);
-    width: 308px;
-  }
-
-  &__link {
+  &--link {
     padding-top: 16px;
   }
 
-  &__link--arrow{
-    position: relative;
-
-    &::after {
-      $height: 10px;
-      $right-button-margin: 52px;
-
-      position: absolute;
-      top: calc(50% - (#{$height} / 2));
-      right: calc(#{$right-button-margin} / 2);
-      display: block;
-      width: 12px;
-      height: $height;
-      content: '';
-      background: url('../img/Vector(1).svg');
-    }
+  &__links {
+    @include justify(space-between);
+    width: 308px;
   }
 
   &__slogan {
@@ -106,7 +99,7 @@
     margin-bottom: 35px;
 
     font-size: $fs-h1;
-    font-weight: $fw8;
+    font-weight: $fw-8;
     line-height: 80px;
 
     @media (max-width: 900px) {
@@ -114,7 +107,7 @@
 
       font: {
         size: $fs-h2;
-        weight: $fw5;
+        weight: $fw-5;
       };
 
       line-height: 57px;
@@ -127,7 +120,7 @@
     margin-bottom: 35px;
 
     font-size: $fs-h4;
-    font-weight: $fw5;
+    font-weight: $fw-5;
 
     @media (max-width: 900px) {
       max-width: 275px;
@@ -138,7 +131,7 @@
 
   &__icons {
     width: 100%;
-    @include flex-justify(space-around);
+    @include justify(space-around);
     margin-bottom: 100px;
   }
 
@@ -164,7 +157,7 @@
 
   &__main {
     @media (max-width: 900px) {
-      @include flex-direction-align(normal, column, center);
+      @include justify-direction-align(normal, column, center);
     }
   }
 }

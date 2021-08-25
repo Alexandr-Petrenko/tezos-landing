@@ -1,4 +1,6 @@
-.tariffs {
+$square-size: 32px;
+
+.pricing {
   padding-bottom: 140px;
   background: $c-dark-bg;
 
@@ -13,21 +15,19 @@
     border-radius: 10px;
 
     &--new:after {
-      $square-size: 90px;
-
       position: absolute;
       top: -44px;
       right: 16px;
       content: "New";
-      @include flex-justify(center);
-      @include round($square-size);
+      @include justify(center);
+      @include round(90px);
       align-items: center;
 
       background: #e77c40;
       color: #fff;
       font: {
         size: $fs-h3;
-        weight: $fw7;
+        weight: $fw-7;
       };
       line-height: 32px;
     }
@@ -48,15 +48,29 @@
   &__subheading {
     max-width: 165px;
     margin: 35px auto;
+
+    font: {
+      size: .67em;
+      weight: bold;
+    }
   }
 
   &__heading-price {
-    font-size: $fs-h2;
+    font: {
+      size: $fs-h2;
+      weight: bold;
+    };
+
     color: $c-button;
   }
 
   &__subheading-price {
     margin-bottom: 35px;
+
+    font: {
+      size: .83em;
+      weight: bold;
+    };
 
     color: $c-lite-bg;
   }
@@ -73,7 +87,7 @@
 
     font: {
       size: $fs-paragraph;
-      weight: $fw6;
+      weight: $fw-6;
     };
 
     text-align: left;
@@ -84,8 +98,6 @@
     }
 
     &--available:before {
-      $square-size: 32px;
-
       position: absolute;
       content: "";
       top: -5px;
@@ -97,8 +109,6 @@
     }
 
     &--unavailable:before {
-      $square-size: 32px;
-
       position: absolute;
       content: "";
       top: -5px;

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="styleshet"
+    rel="stylesheet"
   >
   <link rel="stylesheet" href="./styles/main.css">
   <title>Tezos Landing</title>
@@ -28,32 +28,32 @@
       <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#" class="link header--link">
               Home
             </a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#projects" class="link header--link">
               Product
             </a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#pricing" class="link header--link">
               Pricing
             </a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#appointment" class="link header--link">
               Contact
             </a>
           </li>
         </ul>
       </nav>
       <div class="header__links">
-        <a href="#" class="header__link">
+        <a href="#" class="link header--link">
           Login
         </a>
-        <a href="#" class="button button--arrow header__link header__link--arrow">
+        <a href="#" class="button button--with-icon button--arrow button--with-color">
           Become a member
         </a>
       </div>
@@ -80,10 +80,6 @@
             class="header__service-link"
             aria-label="Search"
           >
-            <!--                            что луччше? визуально скрытый текст у пустой ссылки? или лейбл?-->
-            <span class="visually-hidden">
-              Search
-            </span>
             <svg class="header__service">
               <use xlink:href="#search"></use>
             </svg>
@@ -108,9 +104,6 @@
             class="header__service-link"
             aria-label="Shopping cart"
           >
-            <span class="visually-hidden">
-              Shopping cart
-            </span>
             <svg class="header__service">
               <use xlink:href="#shop"></use>
             </svg>
@@ -127,9 +120,6 @@
             class="header__service-link"
             aria-label="Site menu"
           >
-            <span class="visually-hidden">
-              Site menu
-            </span>
             <svg class="header__service">
               <use xlink:href="#rate"></use>
             </svg>
@@ -165,10 +155,10 @@
       <h1 class="header__slogan">
         We Ensure A Best Insurance Service
       </h1>
-      <h4 class="header__sub-slogan">
+      <p class="header__sub-slogan">
         We know how large objects will act,
         but things on a small scale.
-      </h4>
+      </p>
       <div class="header__buttons">
         <a href="#" class="button button--oval">
           Get Quote Now
@@ -255,9 +245,9 @@
           <h3 class="comments__heading">
             Regina Miles
           </h3>
-          <h6 class="comments__sub-heading">
+          <p class="comments__sub-heading">
             Designer
-          </h6>
+          </p>
           <div class="comments__stars">
             <div class="comments__star comments__star--full"></div>
             <div class="comments__star comments__star--full"></div>
@@ -278,9 +268,9 @@
           <h3 class="comments__heading">
             Regina Miles
           </h3>
-          <h6 class="comments__sub-heading">
+          <p class="comments__sub-heading">
             Designer
-          </h6>
+          </p>
           <div class="comments__stars">
             <div class="comments__star comments__star--full"></div>
             <div class="comments__star comments__star--full"></div>
@@ -300,7 +290,7 @@
       </div>
     </div>
   </section>
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container projects__container">
       <div class="introduction comments__introduction">
         <h2 class="introduction__heading">
@@ -316,10 +306,10 @@
           <h6 class="projects__heading">
             Tax Management
           </h6>
-          <h3 class="projects__subheading">
+          <p class="projects__subheading">
             Life Tips From Top Ten
             Adventure Travelers
-          </h3>
+          </p>
           <a href="#" class="button button--oval">
             View Project
           </a>
@@ -328,10 +318,10 @@
           <h6 class="projects__heading">
             Tax Management
           </h6>
-          <h3 class="projects__subheading">
+          <p class="projects__subheading">
             Life Tips From Top Ten
             Adventure Travelers
-          </h3>
+          </p>
           <a href="#" class="button button--oval">
             View Project
           </a>
@@ -340,10 +330,10 @@
           <h6 class="projects__heading">
             Tax Management
           </h6>
-          <h3 class="projects__subheading">
+          <p class="projects__subheading">
             Life Tips From Top Ten
             Adventure Travelers
-          </h3>
+          </p>
           <a href="#" class="button button--oval">
             View Project
           </a>
@@ -363,7 +353,7 @@
       </div>
     </div>
   </section>
-  <section class="tariffs">
+  <section class="pricing" id="pricing">
     <div class="container">
       <div class="introduction comments__introduction">
         <h2 class="introduction__heading">
@@ -374,113 +364,113 @@
           the two major realms of Classical physics: Newtonian mechanics
         </p>
       </div>
-      <div class="section-wrapper section-wrapper--tariffs">
-        <div class="tariffs__item">
-          <h3 class="tariffs__heading">
+      <div class="section-wrapper section-wrapper--pricing">
+        <div class="pricing__item">
+          <h3 class="pricing__heading">
             free
           </h3>
-          <h6 class="tariffs__subheading">
+          <p class="pricing__subheading">
             Organize across all
             apps by hand
-          </h6>
-          <h2 class="tariffs__heading-price">
+          </p>
+          <p class="pricing__heading-price">
             0$
-          </h2>
-          <h5 class="tariffs__subheading-price">
+          </p>
+          <p class="pricing__subheading-price">
             Per Month
-          </h5>
-          <a href="#" class="button tariffs__button">
+          </p>
+          <a href="#" class="button pricing__button button--with-color">
             Try for free
           </a>
-          <h6 class="tariffs__service tariffs__service--available">
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--available">
+          </p>
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--available">
+          </p>
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--unavailable">
+          </p>
+          <p class="pricing__service pricing__service--unavailable">
             1GB Cloud storage
-          </h6>
-          <h6 class="tariffs__service tariffs__service--unavailable">
+          </p>
+          <p class="pricing__service pricing__service--unavailable">
             Email and community
             support
-          </h6>
+          </p>
         </div>
-        <div class="tariffs__item tariffs__item--new">
-          <h3 class="tariffs__heading">
+        <div class="pricing__item pricing__item--new">
+          <h3 class="pricing__heading">
             free
           </h3>
-          <h6 class="tariffs__subheading">
+          <p class="pricing__subheading">
             Organize across all
             apps by hand
-          </h6>
-          <h2 class="tariffs__heading-price">
+          </p>
+          <p class="pricing__heading-price">
             0$
-          </h2>
-          <h5 class="tariffs__subheading-price">
+          </p>
+          <p class="pricing__subheading-price">
             Per Month
-          </h5>
-          <a href="#" class="button tariffs__button">
+          </p>
+          <a href="#" class="button pricing__button button--with-color">
             Try for free
           </a>
-          <h6 class="tariffs__service tariffs__service--available">
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--available">
+          </p>
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--available">
+          </p>
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--unavailable">
+          </p>
+          <p class="pricing__service pricing__service--unavailable">
             1GB Cloud storage
-          </h6>
-          <h6 class="tariffs__service tariffs__service--unavailable">
+          </p>
+          <p class="pricing__service pricing__service--unavailable">
             Email and community
             support
-          </h6>
+          </p>
         </div>
-        <div class="tariffs__item">
-          <h3 class="tariffs__heading">
+        <div class="pricing__item">
+          <h3 class="pricing__heading">
             free
           </h3>
-          <h6 class="tariffs__subheading">
+          <p class="pricing__subheading">
             Organize across all
             apps by hand
-          </h6>
-          <h2 class="tariffs__heading-price">
+          </p>
+          <p class="pricing__heading-price">
             0$
-          </h2>
-          <h5 class="tariffs__subheading-price">
+          </p>
+          <p class="pricing__subheading-price">
             Per Month
-          </h5>
-          <a href="#" class="button tariffs__button">
+          </p>
+          <a href="#" class="button pricing__button button--with-color">
             Try for free
           </a>
-          <h6 class="tariffs__service tariffs__service--available">
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--available">
+          </p>
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--available">
+          </p>
+          <p class="pricing__service pricing__service--available">
             Unlimited product updates
-          </h6>
-          <h6 class="tariffs__service tariffs__service--unavailable">
+          </p>
+          <p class="pricing__service pricing__service--unavailable">
             1GB Cloud storage
-          </h6>
-          <h6 class="tariffs__service tariffs__service--unavailable">
+          </p>
+          <p class="pricing__service pricing__service--unavailable">
             Email and community
             support
-          </h6>
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <section class="appointment">
+  <section class="appointment" id="appointment">
     <div class="container">
       <div class="introduction appointment__introduction">
         <h2 class="introduction__heading">
@@ -538,7 +528,7 @@
             placeholder="Message"
           ></textarea>
         </label>
-        <a href="#" class="button">
+        <a href="#" class="button button--with-color">
           Book Appointment
         </a>
       </form>
@@ -556,97 +546,97 @@
           the quick fox jumps over the lazy dog
         </p>
       </div>
-      <a href="#" class="button consulting__button">
+      <a href="#" class="button consulting__button button--with-color">
         Contact Us
       </a>
     </div>
   </section>
-  <section class="about">
-    <div class="container about__container">
-      <div class="about__item">
-        <h5 class="about__heading">
+  <section class="useful-links">
+    <div class="container useful-links__container">
+      <div class="useful-links__item">
+        <h5 class="useful-links__heading">
           Company Info
         </h5>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           About Us
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Carrier
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           We are hiring
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Blog
         </a>
       </div>
-      <div class="about__item">
-        <h5 class="about__heading">
+      <div class="useful-links__item">
+        <h5 class="useful-links__heading">
           Legal
         </h5>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           About Us
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Carrier
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           We are hiring
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Blog
         </a>
       </div>
-      <div class="about__item">
-        <h5 class="about__heading">
+      <div class="useful-links__item">
+        <h5 class="useful-links__heading">
           Features
         </h5>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Business Marketing
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           User Analytic
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Live Chat
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Unlimited Support
         </a>
       </div>
-      <div class="about__item">
-        <h5 class="about__heading">
+      <div class="useful-links__item">
+        <h5 class="useful-links__heading">
           Resources
         </h5>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           IOS & Android
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Watch a Demo
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           Customers
         </a>
-        <a href="#" class="about__link">
+        <a href="#" class="link useful-links--link">
           API
         </a>
       </div>
-      <div class="about__item">
-        <h5 class="about__heading">
+      <div class="useful-links__item">
+        <h5 class="useful-links__heading">
           Get In Touch
         </h5>
-        <a href="tel:4805550103" class="about__link">
+        <a href="tel:4805550103" class="link useful-links--link">
           (480) 555-0103
         </a>
         <a
           href="https://www.google.com/maps/search/4517+Washington+Ave.+Manchester,+Kentucky+39495/@37.1475918,-83.7858831,14z/data=!3m1!4b1"
-          class="about__link"
+          class="link useful-links--link"
           target="_blank"
           rel="noopener noreferrer"
         >
           4517 Washington Ave.
         </a>
-        <a href="mailto:debra.holt@example.com" class="about__link">
+        <a href="mailto:debra.holt@example.com" class="link useful-links--link">
           debra.holt@example.com
         </a>
       </div>
@@ -669,6 +659,7 @@
             <source media="(min-width: 901px)" srcset="./img/facebook.svg">
             <source media="(max-width: 900px)" srcset="./img/facebook-square.svg">
             <img
+              class="copy__img-item"
               src="./img/facebook.svg"
               style="width:24px;"
               alt="Facebook"
@@ -686,6 +677,7 @@
             <source media="(min-width: 901px)" srcset="./img/instagram.svg">
             <source media="(max-width: 900px)" srcset="./img/instagram-color.svg">
             <img
+              class="copy__img-item"
               src="./img/instagram.svg"
               style="width:24px;"
               alt="Instagram"
@@ -703,6 +695,7 @@
             <source media="(min-width: 901px)" srcset="./img/twitt.svg">
             <source media="(max-width: 900px)" srcset="./img/twitt.svg">
             <img
+              class="copy__img-item"
               src="./img/twitt.svg"
               style="width:24px;"
               alt="Instagram"

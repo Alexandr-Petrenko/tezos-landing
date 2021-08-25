@@ -1,0 +1,13 @@
+.link {
+  display: block;
+  transition: color .5s;
+
+  &:hover {
+    color: $c-svg-hover;
+    transition: color .5s;
+  }
+
+  &--mobile:hover {
+    color: $c-svg-hover;
+  }
+}

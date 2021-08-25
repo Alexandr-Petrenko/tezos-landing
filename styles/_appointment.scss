@@ -30,14 +30,14 @@
 
   &__form {
     max-width: 601px;
-    @include flex-justify(space-between);
+    @include justify(space-between);
     flex-wrap: wrap;
 
-    @media (max-width: 900px) {
+    @include media() {
       margin: 0 auto;
     }
 
-    @media (max-width: 569px) {
+    @include media(569px) {
       justify-content: center;
     }
   }

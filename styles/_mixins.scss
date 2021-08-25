@@ -1,0 +1,31 @@
+@mixin square($size) {
+  width: $size;
+  height: $size;
+};
+
+@mixin round($size) {
+  @include square($size);
+
+  border-radius: 50%;
+}
+
+@mixin justify($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin justify-direction($justify, $direction) {
+  @include justify($justify);
+  flex-direction: $direction;
+}
+
+@mixin justify-direction-align($justify, $direction, $align) {
+  @include justify-direction($justify, $direction);
+  align-items: $align;
+}
+
+@mixin media($width-value: 900px) {
+  @media (max-width: $width-value) {
+    @content;
+  }
+}
